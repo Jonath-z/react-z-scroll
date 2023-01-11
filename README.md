@@ -2,6 +2,8 @@
 
 > Made with create-react-library
 
+react-z-scroll is a modern react scroll library built on top of [skrollr](https://github.com/Prinzhorn/skrollr) and inspired by [GA-MO's](https://github.com/GA-MO) react-skroll library
+
 [![NPM](https://img.shields.io/npm/v/react-z-scroll.svg)](https://www.npmjs.com/package/react-z-scroll) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
@@ -12,16 +14,46 @@ npm install --save react-z-scroll
 
 ## Usage
 
+Add `ScrollProvider` into root app
+
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-z-scroll'
-import 'react-z-scroll/dist/index.css'
+import { ScrollProvider } from 'react-z-scroll'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const myApp = () => {
+     return (
+      <ScrollProvider
+        init={{
+          smoothScrollingDuration: 500,
+          smoothScrolling: true,
+          forceHeight: false
+        }}
+      >
+      ...
+      </>
+    )
+}
+```
+
+### Setting Scene data (Required)
+
+Use data scrolling via props `data` (props type is object)
+
+Skrollr [_Data attr document_](https://github.com/Prinzhorn/skrollr#absolute-vs-relative-mode)
+
+```js
+const Component = () => {
+  return (
+    <Scene
+      data={{
+        'data-center-center': 'opacity: 1;',
+        'data-bottom-top': 'opacity: 0;'
+      }}
+    >
+      Some content
+    </Scene>
+  )
 }
 ```
 
