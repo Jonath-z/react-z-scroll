@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
-import skrollr from 'skrollr'
+import _skrollr from './skrollr/skrollr'
 
 function ScrollProvider({ children, initProps = {} }) {
   useEffect(function () {
     if (typeof window !== undefined || typeof window !== 'undefined') {
-      skrollr.init(initProps)
+      _skrollr(window, document)
+
+      window.skrollr.init(initProps)
     }
   }, [])
 
