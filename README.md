@@ -2,7 +2,7 @@
 
 > Made with create-react-library
 
-react-z-scroll is a modern react scroll library built on top of [skrollr](https://github.com/Prinzhorn/skrollr) and inspired by [GA-MO's](https://github.com/GA-MO) react-skroll library
+react-z-scroll is a react scroll library built on top of [skrollr](https://github.com/Prinzhorn/skrollr).
 
 [![NPM](https://img.shields.io/npm/v/react-z-scroll.svg)](https://www.npmjs.com/package/react-z-scroll) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
