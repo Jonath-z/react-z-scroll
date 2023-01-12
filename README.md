@@ -13,7 +13,7 @@ react-z-scroll is a modern react scroll library built on top of [skrollr](https:
 ## Install
 
 ```bash
-npm install --save react-z-scroll
+npm install --legacy-peer-deps react-z-scroll
 ```
 
 ## Usage
