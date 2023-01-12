@@ -6,6 +6,10 @@ react-z-scroll is a modern react scroll library built on top of [skrollr](https:
 
 [![NPM](https://img.shields.io/npm/v/react-z-scroll.svg)](https://www.npmjs.com/package/react-z-scroll) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## DEM0
+
+[react-z-scroll demo](https://react-z-scroll-demo-butik004.vercel.app)
+
 ## Install
 
 ```bash
