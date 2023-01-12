@@ -1,6 +1,6 @@
 {
   "name": "react-z-scroll",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React scroll library built on top of skrollr library",
   "author": "Jonath-z",
   "license": "MIT",
